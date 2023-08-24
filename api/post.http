@@ -1,0 +1,44 @@
+POST http://localhost:1234/api/post
+Content-Type: application/json
+
+{
+  "name": "gasti",
+  "type": "person"
+}
+
+####
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+  "title": "Spiderman",
+  "year": 2022,
+  "director": "Sam Raimi",
+  "rate": 10,
+  "duration": "121",
+  "poster": "",
+  "genre": [
+    "action"
+  ]
+}
+
+####
+PATCH http://localhost:1234/movies/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+Content-Type: application/json
+
+{ 
+  "year": 2023,
+}
+
+####
+DELETE http://localhost:1234/movies/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+Content-Type: application/json
+
+
+####
+GET http://localhost:1234/movies
+Content-Type: application/json
+
+####
+GET http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+Content-Type: application/json
